@@ -53,26 +53,26 @@ function Navigation() {
 
     return (
         <nav className={
-            "nav-bar "
-            + (hideNavBar ? "nav-bar--hide " : "")
-            + (lastScrollY > 80 ? "nav-bar--shadow" : "")
+            "c-nav-bar "
+            + (hideNavBar ? "c-nav-bar--hide " : "")
+            + (lastScrollY > 80 ? "c-nav-bar--shadow" : "")
         }>
-            <div className="logo logo--green logo--large nav-bar__logo">KR</div>
-            <div className="nav-bar__inner">
-                <div className="ham-menu ham-menu--green ham-menu--large ham-menu--hide nav-bar__ham-menu" onClick={() => {
+            <div className="c-logo c-logo--green c-logo--large c-nav-bar__logo">KR</div>
+            <div className="c-nav-bar__inner">
+                <div className="c-ham-menu c-ham-menu--green c-ham-menu--large c-ham-menu--hide c-nav-bar__ham-menu" onClick={() => {
                     setIsMenuBarOpen(!isMenuBarOpen);
                 }}>
                     <i className={"fas fa-" + (isMenuBarOpen ? "times" : "bars")}></i>
                 </div>
-                <ol className={"menu-bar menu-bar--lightest-slate " + (!isMenuBarOpen ? "menu-bar--hide" : "")}>
+                <ol className={"c-menu-bar c-menu-bar--lightest-slate " + (!isMenuBarOpen ? "c-menu-bar--hide" : "")}>
                     {navBarTabs.map(tabs =>
-                        <li key={tabs} className="menu-bar__item menu-bar__item--hover-green">
-                            <a href={"#" + tabs} className="menu-bar__link" onClick={closeMenuBar}>
+                        <li key={tabs} className="c-menu-bar__item c-menu-bar__item--hover-green">
+                            <a href={"#" + tabs} className="c-menu-bar__link" onClick={closeMenuBar}>
                                 {tabs}
                             </a>
                         </li>
                     )}
-                    <a href='/resume.pdf' className="resume-btn resume-btn--green resume-btn--sm resume-btn--xs menu-bar__resume-btn">
+                    <a href='/resume.pdf' className="o-btn o-btn--green o-btn--xs c-menu-bar__btn">
                         Resume
                     </a>
                 </ol>

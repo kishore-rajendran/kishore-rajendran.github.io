@@ -1,0 +1,21 @@
+.o-btn {
+    display: inline-block;
+    border: 1px solid $green;
+    border-radius: 4px;
+    transition: $transition;
+
+    &--green {
+        color: $green;
+        background-color: transparent;
+
+        &:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+    }
+    &--xs {
+        font-size: $fz-xs;
+    }
+    &--large {
+        font-size: $fz-xxl;
+    }
+}
