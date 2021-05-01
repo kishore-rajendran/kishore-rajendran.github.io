@@ -3,7 +3,6 @@
 .c-landing-section {
     display: flex;
     min-height: 100vh;
-    padding: 100px;
     justify-content: center;
     flex-direction: column;
 
@@ -19,24 +18,16 @@
         font-size: clamp(40px, 8vw, 80px);
         font-weight: 600;
         color: $lightest-slate;
-        z-index: 1;
     }
     &__role {
         font-size: clamp(20px, 8vw, 60px);
         color: $slate;
         font-weight: 600;
-        z-index: 1;
     }
     &__btn {
         margin-top: 50px;
         width: 200px;
         padding: 15px;
         text-align: center;
-    }
-}
-
-@media (max-width: 858px) {
-    .c-landing-section {
-        padding: 0 50px;
     }
 }

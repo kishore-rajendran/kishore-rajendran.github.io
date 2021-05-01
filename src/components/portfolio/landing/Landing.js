@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
 
-function Landing() {
+function Landing () {
     return (
-        <div className="c-landing-section">
+        <div className="c-landing-section section">
             <div className="c-landing-section__intro">
                 Hi, my name is,
             </div>
@@ -17,7 +17,7 @@ function Landing() {
                 Resume
             </a>
         </div>
-    )
+    );
 }
 
 export default Landing;

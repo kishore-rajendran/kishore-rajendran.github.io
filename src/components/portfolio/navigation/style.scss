@@ -9,7 +9,7 @@
     z-index: 10;
     width: 100%;
     height: $nav-height;
-    padding: 0 40px;
+    padding: 0 50px;
     transition: $transition;
     background: $navy;
     counter-reset: item 0;
@@ -18,7 +18,7 @@
         top: -100px;
     }
     &--shadow {
-        box-shadow: 0 0 10px 0;
+        box-shadow: 0 0 10px 0 $navy-shadow;
     }
     &__logo {
         padding: 5px;
@@ -101,12 +101,22 @@
     }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 1080px) {
+    .c-nav-bar {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .c-nav-bar {
+        padding: 0px 25px;
+
+        &__inner {
+            width: 0;
+        }
+    }
     .c-ham-menu--hide {
         display: block;
-    }
-    .c-nav-bar__inner {
-        width: 0;
     }
     .c-menu-bar {
         position: fixed;
