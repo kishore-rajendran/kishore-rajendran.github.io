@@ -7,12 +7,15 @@ function About () {
         <div className="about-section">
             <div className="about-section__content">
                 <p>
-                    Hi! My name is Kishore and I enjoy programming that makes an impact on the people. I like exploring new buzz words in tech-world, while keeping the fundamentals strong, maintaining a T shaped learning. It all started with solving problems in hacker rank and here I’m solving real world problems.
+                    Hi! My name is Kishore, a programming enthusiast who loves exploring new buzz words in tech-world, while keeping the fundamentals strong. It all started with solving problems in hacker rank and here I’m solving real world problems.
                 </p>
                 <p>
                     I work in a <a href="https://www.zoomrx.com" target="_blank" rel="noopener noreferrer">
                         strategic healthcare consulting company
-                    </a> as a software development engineer. Apart from work I love exploring new places and clicking some photos.
+                    </a> as a software development engineer. Apart from work I love exploring new places and clicking
+                    some <a href="https://www.instagram.com/i_click_memories/" target="_blank" rel="noopener noreferrer">
+                        photos
+                    </a>.
                 </p>
                 <p>
                     Some of the technologies I’m working with recently,

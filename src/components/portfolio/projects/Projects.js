@@ -39,15 +39,15 @@ function Projects () {
                         <Folder className="project__folder" />
                         <div className="project__links-container">
                             {project.github &&
-                                <a href={project.github}><Github className="project__link" /></a>
+                                <a href={project.github} target="_blank" rel="noopener noreferrer"><Github className="project__link--light-slate" /></a>
                             }
                             {project.website &&
-                                <a href={project.website}><Link className="project__link project__link--light-slate" /></a>
+                                <a href={project.website} target="_blank" rel="noopener noreferrer"><Link className="project__link project__link--light-slate" /></a>
                             }
                         </div>
                     </div>
                     <div className="project__title">
-                        <a className="project__title--link" href={project.website || project.github}>
+                        <a className="project__title--link" href={project.website || project.github} target="_blank" rel="noopener noreferrer">
                             {project.title}
                         </a>
                     </div>
