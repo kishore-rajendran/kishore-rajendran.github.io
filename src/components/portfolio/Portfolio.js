@@ -3,12 +3,14 @@ import Navigation from './navigation/Navigation';
 import Landing from './landing/Landing';
 import About from './about/About';
 import Experience from './experience/Experience';
+import Projects from './projects/Projects';
 import './style.scss';
 
 function Portfolio () {
     let sectionHeaders = [
         { name: "About", slug: About },
         { name: "Experience", slug: Experience },
+        { name: "Projects", slug: Projects },
     ];
     return (
         <div>

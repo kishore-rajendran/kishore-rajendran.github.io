@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './style.scss';
 
-function Navigation() {
+function Navigation () {
     const [hideNavBar, setHideNavBar] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isMenuBarOpen, setIsMenuBarOpen] = useState(false);
-    const navBarTabs = ['About', 'Experience', 'Project', 'Contact'];
+    const navBarTabs = ['About', 'Experience', 'Projects', 'Contact'];
     const closeMenuBar = useCallback(() => setIsMenuBarOpen(false), []);
 
     useEffect(() => {
@@ -13,8 +13,8 @@ function Navigation() {
         mediaQuery.addListener(closeMenuBar);
         return () => {
             mediaQuery.removeListener(closeMenuBar);
-        }
-    }, [closeMenuBar])
+        };
+    }, [closeMenuBar]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,7 +29,7 @@ function Navigation() {
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
-        }
+        };
     }, [lastScrollY]);
 
     useEffect(() => {
@@ -48,8 +48,8 @@ function Navigation() {
         return () => {
             bodyTag.classList.remove('body--blur');
             contentSection.removeEventListener('click', closeMenuBar);
-        }
-    }, [isMenuBarOpen, closeMenuBar])
+        };
+    }, [isMenuBarOpen, closeMenuBar]);
 
     return (
         <nav className={
@@ -78,7 +78,7 @@ function Navigation() {
                 </ol>
             </div>
         </nav>
-    )
+    );
 }
 
 export default Navigation;
