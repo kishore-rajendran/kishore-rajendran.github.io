@@ -11,10 +11,11 @@ function Experience () {
             role: 'Software Development Engineer',
             link: 'https://www.zoomrx.com',
             statements: [
-                'Integer non elit ac nisi ullamcorper iaculis.',
-                'Proin aliquam ligula et ligula dignissim scelerisque in pellentesque diam.',
-                'Donec in quam vitae arcu rhoncus rhoncus.',
-                'Curabitur pharetra eros tristique tristique viverra.'
+                'I was introduced to the work culture of agile environment like scrum and pod.',
+                'Got the opportunity to work in modern javascript (ES6+), ember, svelte, scss, mithril and tools like phabricator, git, webpack.',
+                'Developed and shipped a automation tool which reduced the work of BA from days of work to few hours increasing the productivity.',
+                'Built a logic puzzle game as a part of candidate assessment tool to ease the work flow of recruitment for HR team',
+                'Took the responsibility of conducting fun events, managing documentation of products and been a part of the new joinee induction as SME for a POD.',
             ]
         }, {
             tabName: 'University',
@@ -23,10 +24,10 @@ function Experience () {
             role: 'Student',
             link: 'https://www.kct.ac.in/',
             statements: [
-                'Integer non elit ac nisi ullamcorper iaculis.',
-                'Proin aliquam ligula et ligula dignissim scelerisque in pellentesque diam.',
-                'Donec in quam vitae arcu rhoncus rhoncus.',
-                'Curabitur pharetra eros tristique tristique viverra.'
+                'Got introduced to the computer science concepts like AI, DBMS, compilers, design patterns, OOPs, etc...',
+                'We got the opportunities to explore web development, programming, machine learning related projects.',
+                'Achieved a CGPA of 8.46 at the end of the course.',
+                'Received Mahatma Gandhi Merit Scholarship which is awarded to Top 15 students of the batch.'
             ]
         }, {
             tabName: 'School',
@@ -35,10 +36,9 @@ function Experience () {
             role: 'Student',
             link: 'http://nationalmodel.in',
             statements: [
-                'Integer non elit ac nisi ullamcorper iaculis.',
-                'Proin aliquam ligula et ligula dignissim scelerisque in pellentesque diam.',
-                'Donec in quam vitae arcu rhoncus rhoncus.',
-                'Curabitur pharetra eros tristique tristique viverra.'
+                'Got my first glance at programing here.',
+                'Achieved a score of 93% in public exam.',
+                'The course included computer science, maths, physics, chemistry.',
             ]
         }
     ];
