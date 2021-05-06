@@ -1,0 +1,41 @@
+@import "../../../config/variables";
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__profile-image {
+        width: 300px;
+        border-radius: 25px;
+        margin-left: 50px;
+    }
+    &__skill-set {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        padding: 0px;
+        margin: 20px 0px 0px;
+        overflow: hidden;
+        list-style: none;
+
+        &--list {
+            &::before {
+                content: "▹";
+                margin-right: 10px;
+                color: $green;
+                font-size: $fz-sm;
+                line-height: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        &__profile-image {
+            margin: 50px auto 0;
+            width: 70%;
+        }
+    }
+}
