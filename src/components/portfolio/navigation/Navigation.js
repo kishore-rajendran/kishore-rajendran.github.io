@@ -9,7 +9,7 @@ function Navigation () {
     const closeMenuBar = useCallback(() => setIsMenuBarOpen(false), []);
 
     useEffect(() => {
-        let mediaQuery = window.matchMedia("(max-width: 858px)");
+        let mediaQuery = window.matchMedia("(max-width: 768px)");
         mediaQuery.addListener(closeMenuBar);
         return () => {
             mediaQuery.removeListener(closeMenuBar);

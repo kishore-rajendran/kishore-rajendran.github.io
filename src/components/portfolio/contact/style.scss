@@ -47,3 +47,15 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .platform:hover {
+        transform: none;
+        .platform__logo {
+            fill: $light-slate;
+        }
+        .platform__name {
+            color: $light-slate;
+        }
+    }
+}

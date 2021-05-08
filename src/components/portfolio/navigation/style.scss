@@ -92,7 +92,8 @@
     z-index: 10;
     font-size: 30px;
     cursor: pointer;
-
+    -webkit-tap-highlight-color: transparent;
+    
     &--green {
         color: $green;
     }
