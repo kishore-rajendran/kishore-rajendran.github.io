@@ -15,7 +15,7 @@ function Contact () {
         }, {
             name: "LinkedIn",
             slug: Linkedin,
-            link: "linkedin.com/in/kishorerajendrann"
+            link: "https://linkedin.com/in/kishorerajendrann"
         }, {
             name: "HackerRank",
             slug: Hackerrank,
