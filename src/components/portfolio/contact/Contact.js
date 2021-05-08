@@ -33,7 +33,7 @@ function Contact () {
     ];
     return (
         <div className="contact-section">
-            <div className="contact-section__content">You can view my profile across different platforms and also you can drop a buzz word into my email.</div>
+            <div className="contact-section__content">You can view my profile across different platforms down and feel free to drop a buzz word into my email.</div>
             {platforms.map((platform, key) => (
                 <a href={platform.link} className="platform" target="_blank" rel="noopener noreferrer" key={key}>
                     <platform.slug className={"platform__logo" + (platform.modifier ? " platform__logo" + platform.modifier : "")} />
