@@ -4,9 +4,30 @@ import { ReactComponent as Github } from '../../../assets/svg/github.svg';
 import { ReactComponent as Link } from '../../../assets/svg/link.svg';
 import { ReactComponent as Folder } from '../../../assets/svg/folder.svg';
 
-function Projects () {
+function Projects() {
     let projects = [
         {
+            github: "https://github.com/kishore-rajendran/tn-covid",
+            website: "https://tn-covid-bed.web.app/",
+            title: "TN Covid Beds",
+            description: (<p>
+                A covid bed finder website to search hospital bed availability in Tamil Nadu. The data was dynamically updated from a
+                <a
+                    onClick={(e) => e.stopPropagation()}
+                    href="https://github.com/stopcoronatn/stopcoronatn.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    &nbsp; crowdsourced repo
+                </a>. It was a weekend project yet the impact to society is huge.</p>),
+            toolsUsed: ["react", "scss"]
+        }, {
+            github: "https://github.com/kishore-rajendran/just-lists",
+            website: "https://just-lists.vercel.app/",
+            title: "Just Lists",
+            description: "A note taking website inspired by trello and google keep, which works completely offline. It helped me to uderstand how react works",
+            toolsUsed: ["react", "scss"]
+        }, {
             github: "https://github.com/kishore-rajendran/loan-calculator",
             website: "https://loancalc.vercel.app/",
             title: "Loan Calculator",
@@ -22,7 +43,7 @@ function Projects () {
             github: "https://github.com/kishore-rajendran/blog-and-chat-application",
             title: "Blog and Chat",
             description: "A simple person-to-person chat application along with blogging. It was my first fullstack application done during college on 2018.",
-            toolsUsed: ["nodeJs", "expressJs", "socket-io", "ejs"]
+            toolsUsed: ["expressJs", "socket-io", "ejs"]
         },
     ];
     return (
